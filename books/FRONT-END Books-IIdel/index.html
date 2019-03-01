@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+    table,th,td{
+        border: 1px black solid;
+    }
+
+
+</style>
+
+
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr id="thead">
+                <th onclick="sortById()">ID number</th>
+                <th onclick="sortByTitle()">Book title</th>
+                <th>Principal author </th>
+                <th>Publishing information</th>
+                <th>Length</th>
+                <th>Additional information</th>              
+                <th>Review</th>
+                <th>Action for book deletion</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

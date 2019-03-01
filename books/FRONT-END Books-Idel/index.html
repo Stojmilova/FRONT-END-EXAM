@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Library</h1>
+
+
+    <form>
+        <input type='radio' onclick="displayNovel()" name="typeOfBook" value="novel" id="display-Novel"  /> Novel
+        <input type='radio' onclick="displayAnthology()" name="typeOfBook" value="anthology" id="display-Anthology" /> Anthology
+    </form>
+
+    <form id='novel' style="display:none">
+        <input type="text" id="title" placeholder="Enter Title" required />
+        <input type="text" id="author" placeholder="Enter Author" required/>
+        <select id="publisher">
+            <option id="pub-enter" placeholder="Enter Publisher" value="">Choose publisher </option>
+        </select>
+
+        <input type="number" id="yearOfPublication" placeholder="Enter year of publication" />
+        <input type="number" id="pages" placeholder="Enter length in pages">
+        <input type="text" id="series" placeholder="Enter Series" onkeydown ="enableInputNumberOfSeries()"/>
+        <input type="number" id="seriesNumber" placeholder="Enter Series Number" disabled />
+        <input type="number"id="ISBN" placeholder="Enter 13-Digit ISBN"/>
+        <textarea id="review" placeholder="Enter Review"></textarea>
+        <button id="btn-novel" onclick="validationNovel()">Add novel</button>
+
+    </form>
+
+
+    <form id='anthology' style="display:none">
+        <input type="text" placeholder="Enter Title">
+        <input type="text" placeholder="Enter Editor">
+        <input type="text" placeholder="Enter Publisher ">
+        <input type="number" placeholder="Enter year of publication">
+        <input type="number" placeholder="Enter length in pages">
+        <input type="text" placeholder="Enter Stories">
+        <input type="number" placeholder="Enter 13-Digit ISBN">
+        <input type="text" placeholder="Enter Review">
+        <button>Add anthology</button>
+
+
+    </form>
+
+     <ul id="display-novel"></ul>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
